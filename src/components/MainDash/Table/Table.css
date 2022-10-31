@@ -1,0 +1,32 @@
+.MuiTableRow-root > * {
+  padding: 10px;
+}
+
+.MuiTableRow-head > * {
+  font-weight: bold;
+}
+
+.table td, th {
+  border: none !important;
+}
+
+.table-status {
+  padding: 8px;
+  border-radius: 9px;
+}
+
+@media screen and (max-width: 1200px) {
+  .table {
+    width: 170%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+  }
+}/*# sourceMappingURL=Table.css.map */

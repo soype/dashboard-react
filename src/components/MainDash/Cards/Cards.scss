@@ -1,0 +1,141 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    min-height: 10rem;
+}
+
+// Compact card
+
+.compact-card{
+    display: flex;
+    flex: 1;
+    height: clamp(7rem, 7rem, 16rem);
+    border-radius: 0.7rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 200ms ease-in-out;
+    &:hover{
+        box-shadow: none!important;
+    }
+    padding: 1rem;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+// radialBar
+.radial-bar{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.CircularProgressbar {
+    width: 4rem !important;
+    overflow: visible;
+}
+
+.CircularProgressbar-path{
+    stroke: white!important;
+    stroke-width: 12px !important;
+    filter: drop-shadow(2px 4px 6px white)
+}
+
+.CircularProgressbar-trail{
+    display: none;
+}
+
+.CircularProgressbar-text{
+    font-size: 17px;
+    font-weight: bold;
+    fill: white!important;
+}
+
+// Detail
+
+.detail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    span:nth-child(2){
+        font-size: 22px;
+        font-weight: bold;
+    }
+    span:nth-child(3){
+        font-size: 12px;
+    }
+}
+
+
+// Expandable Card
+
+.expanded-card{
+    position: absolute;
+    width: 60%;
+    // TODO: Problem here, should be min(700px, 70vh) for bigger screens
+    height: 70vh;
+    //
+    z-index: 9;
+    left: 13rem;
+    border-radius: 1rem;
+    display: flex;
+    flood-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    span:nth-of-type(2){
+        color: rgb(223,223,223);
+        font-size: 15px;
+    }
+}
+
+.expanded-card-close{
+    align-self:flex-end;
+    cursor: pointer;
+    color: white;
+}
+
+.expanded-card-title{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+}
+
+.chart-container{
+    width: 70%;
+}
+
+@media screen and (max-width: 1200px){
+    .cards{
+        flex-direction: column;
+    }
+    .expanded-card{
+        top: 2rem;
+        height: 70vh; // TODO: This is unnecesary
+        left: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cards{
+        width: 90%;
+    }
+    .compact-card{
+
+    }
+    .expanded-card{
+        top: 8rem;
+        height: 50%;
+        left: 15px; // TODO_ This doesn't look right on all devices
+        width: 80%;
+    }
+}

@@ -1,0 +1,18 @@
+.main-dash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 1rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-dash {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-dash {
+    align-items: center;
+  }
+}/*# sourceMappingURL=MainDash.css.map */

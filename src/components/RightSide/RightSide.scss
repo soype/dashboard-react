@@ -1,0 +1,23 @@
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1200px){
+    .right-side{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .right-side{
+        width: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    //TODO check Update css for mobile adjustments 
+}
