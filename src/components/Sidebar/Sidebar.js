@@ -51,18 +51,30 @@ const Sidebar = (props) => {
 
   const [selected, setSelected] = useState(0);
   // Menu expand for mobile
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const selectHandler = (e) => {
     setSelected(e.id.toString());
   };
 
+  const sidebarVariants = {
+    true: {
+      left: '0'
+    },
+    false:{
+      left: '-60%'
+    }
+  }
+
   return (
     <>
-      <div className="bars" style={expanded? {left:'60%'}:{left:'5%'}}>
+      <div className="bars" style={expanded? {left:'60%'}:{left:'5%'}} onClick={() => setExpanded(!expanded)}>
           <UilBars />
         </div>
-      <motion.div className="sidebar"> 
+      <motion.div className="sidebar" 
+        variants={sidebarVariants}
+        animate={window.innerWidth<=768?`${expanded}`:''}
+      >
         <div className="logo">
           <img src={Logo} alt="" />
           <span className="logo-text">

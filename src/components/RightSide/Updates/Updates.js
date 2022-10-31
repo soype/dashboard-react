@@ -32,7 +32,8 @@ const Updates = () => {
     <div className="updates">
       {UpdatesData.map((update) => {
         return (
-          <React.Fragment>
+          <React.Fragment> 
+            {/* TODO: Add unique key */}
             <div className="update">
               <img className="update-img" src={update.img} alt="" />
               <div className="update-message">

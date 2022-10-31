@@ -11,6 +11,13 @@
   --activeItem: #f799a354;
 }
 
+
+/* Added body margin 0 */
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   background: linear-gradient(106.37deg,
       #ffe1bc 29.63%,
