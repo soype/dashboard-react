@@ -15,7 +15,7 @@ import {motion} from 'framer-motion';
 import "./Sidebar.css";
 import MenuItem from "./MenuItem";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   const menuItems = [
     {
       id: 0,
