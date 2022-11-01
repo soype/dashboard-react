@@ -1,14 +1,14 @@
 .main-dash{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; // TODO: Depends on the screen size, should fix.
-    margin: 0 1rem 0;
+    justify-content: flex-start;
+    margin: 1rem 1rem 0;
 }
 
 @media screen and (max-width: 1200px){
     .main-dash{
         justify-content: flex-start;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
