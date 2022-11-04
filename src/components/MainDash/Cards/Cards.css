@@ -110,7 +110,7 @@
   }
   .expanded-card {
     top: 2rem;
-    height: 70vh;
+    height: 60vh;
     left: 6rem;
   }
 }
@@ -121,7 +121,7 @@
   .expanded-card {
     top: 8rem;
     height: 50%;
-    left: 15px;
+    left: 5%;
     width: 80%;
   }
 }/*# sourceMappingURL=Cards.css.map */
