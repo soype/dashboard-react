@@ -1,9 +1,10 @@
 .updates{
-    background: white;
+    background: var(--hardBackground);
     padding: 1rem;
     border-radius: 1rem;
     width: 85%;
     gap: 1rem;
+    color: var(--font-color);
 }
 
 .update{
@@ -22,7 +23,7 @@
         font-weight: bold;
     }
     span:nth-child(3){
-        color: rgb(80,80,80);
+        color: var(--minor-detail);
     }
 }
 

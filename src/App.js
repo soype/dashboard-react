@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import './App.css'
 
 import Sidebar from './components/Sidebar/Sidebar';
@@ -5,12 +7,19 @@ import MainDash from './components/MainDash/MainDash';
 import RightSide from './components/RightSide/RightSide';
 
 function App() {
+
+  const [appDark, setAppDark] = useState(false);
+
+  const toggleDark = () => {
+    setAppDark(!appDark);
+  }
+
   return (
-    <div className="App">
+    <div className={appDark? "App-dark" : "App"}>
         <div className="AppGlass">
             <Sidebar></Sidebar>
             <MainDash></MainDash>
-            <RightSide></RightSide>
+            <RightSide toggle={appDark} onToggle={toggleDark}></RightSide>
         </div>
     </div>
   );

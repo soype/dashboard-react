@@ -25,20 +25,11 @@ const rows = [
 
 const makeStyle=(status) => {
   if(status === "Approved"){
-    return {
-      background: "rgba(145, 254, 159, 0.5",
-      color: "green",
-    };
+    return "approved";
   }else if(status === "Pending"){
-    return {
-      background: "#ffadad8f",
-      color: "red"
-    }
+    return "pending"
   }else if(status === "Delivered"){
-    return {
-      color: "white",
-      background: "rgba(35, 35, 207, 0.7)",
-    }
+    return "delivered"
   }
 }
 
@@ -70,7 +61,7 @@ export default function BasicTable() {
               <TableCell align="left">{row.trackingId}</TableCell>
               <TableCell align="left">{row.date}</TableCell>
               <TableCell align="left">
-                <span className="table-status" style={makeStyle(row.status)}>{row.status}</span>
+                <span className={`${makeStyle(row.status)} ${"table-status"}`}>{row.status}</span>
               </TableCell>
               <TableCell align="left" className='table-detail'>Detail</TableCell>
             </TableRow>

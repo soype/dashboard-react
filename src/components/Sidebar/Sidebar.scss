@@ -45,7 +45,7 @@ $selector-height: 2rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
     cursor: pointer;
-    transition: all 300ms ease;
+    transition: background, border, margin 300ms ease;
     &:last-child{
         position: absolute;
         bottom: 2.3rem;

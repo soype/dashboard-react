@@ -6,6 +6,19 @@
   font-weight: bold;
 }
 
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  background-color: var(--hardBackground) !important;
+  color: var(--font-color);
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  color: var(--font-color) !important;
+}
+
+.css-1ygcj2i-MuiTableCell-root {
+  color: var(--font-color) !important;
+}
+
 .table td, th {
   border: none !important;
 }
@@ -17,6 +30,21 @@
 
 .table-detail {
   color: rgb(37, 218, 218) !important;
+}
+
+.approved {
+  background: rgba(145, 254, 159, 0.5);
+  color: green;
+}
+
+.pending {
+  background: rgba(255, 173, 173, 0.5607843137);
+  color: var(--pink);
+}
+
+.delivered {
+  color: white;
+  background: rgba(35, 35, 207, 0.7);
 }
 
 @media screen and (max-width: 1200px) {
