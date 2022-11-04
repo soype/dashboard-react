@@ -6,6 +6,14 @@
     margin-top: 1.5rem;
 }
 
+.toggle{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1200px){
     .right-side{
         justify-content: flex-start;

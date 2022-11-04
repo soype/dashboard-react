@@ -1,14 +1,5 @@
 :root {
-  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
-  --orange: #fca61f;
-  --black: #242d49;
-  --gray: #788097;
-  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
-  --pink: rgb(255, 145, 157);
-  --glass: rgba(255, 255, 255, 0.54);
-  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-  --activeItem: #f799a354;
+  
 }
 
 
@@ -28,6 +19,50 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Inter', sans-serif;
+  transition: all .3s;
+
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: rgb(255, 145, 157);
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+  --hardBackground: white;
+  --font-color: black;
+  --minor-detail: rgb(80,80,80);
+}
+
+.App-dark {
+  background: linear-gradient(106.37deg,
+      #4356a3 29.63%,
+      #3e2da0 51.55%,
+      #6732a0 90.85%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  transition: all .3s;
+
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #1ffc4f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: rgb(255, 145, 157);
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #a47dca54;
+  --hardBackground: rgba(0, 0, 0, 0.656);
+  --font-color: white;
+  --minor-detail: rgb(217, 216, 216);
+
+  color: white;
 }
 
 .AppGlass {

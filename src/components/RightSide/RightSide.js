@@ -4,10 +4,20 @@ import Updates from './Updates/Updates';
 import Reviews from './Reviews/Reviews';
 
 import './RightSide.css';
+import {UilMoon, UilSun} from "@iconscout/react-unicons";
 
-const RightSide = () => {
+const RightSide = (props) => {
+
+  const toggleHandler = () =>{
+    props.onToggle();
+  }
+
   return (
     <div className="right-side">
+      <button className='toggle' onClick={toggleHandler}>
+        {props.toggle? <UilSun></UilSun> : <UilMoon></UilMoon> }
+        
+      </button>
         <div className="updates-container">
             <h3>Updates</h3>
             <Updates></Updates>
