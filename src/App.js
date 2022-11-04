@@ -8,7 +8,7 @@ import RightSide from './components/RightSide/RightSide';
 
 function App() {
 
-  const [appDark, setAppDark] = useState(false);
+  const [appDark, setAppDark] = useState(true);
 
   const toggleDark = () => {
     setAppDark(!appDark);
