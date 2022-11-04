@@ -72,7 +72,7 @@ $selector-height: 2rem;
         display: none;
     }
     .menu-item{
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     .logo{
         display: none;
@@ -99,7 +99,7 @@ $selector-height: 2rem;
 
     .menu-item:last-child{
         position: relative;
-        margin-top: 2rem; // TODO: Doesn't look right on Samsun S8 and other
+        margin-top: 5rem; 
     }
     .bars{
         display: flex;
