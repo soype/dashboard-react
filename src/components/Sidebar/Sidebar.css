@@ -69,7 +69,7 @@
     display: none;
   }
   .menu-item {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .logo {
     display: none;
@@ -92,7 +92,7 @@
   }
   .menu-item:last-child {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   .bars {
     display: flex;
