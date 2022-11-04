@@ -4,14 +4,16 @@
   width: 95%;
   justify-content: flex-start;
   margin-top: 1.5rem;
+  position: relative;
 }
 
 .toggle {
   background-color: transparent;
   border: none;
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   cursor: pointer;
+  color: var(--font-color);
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,5 +27,15 @@
     width: 100%;
     margin-top: 0;
     align-items: center;
+  }
+  .toggle {
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 2rem;
+    z-index: 9;
+    background: var(--sidebar-back);
+    padding: 10px;
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=RightSide.css.map */
