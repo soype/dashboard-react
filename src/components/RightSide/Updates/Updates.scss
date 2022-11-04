@@ -30,4 +30,10 @@
     line-height: 2rem;   
 }
 
-// TODO: Add @media for mobile. Doesn't look centered
+@media screen and (max-width: 760px) {
+    .updates-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
