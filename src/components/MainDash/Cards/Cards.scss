@@ -114,16 +114,17 @@
     width: 70%;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .cards{
         flex-direction: column;
     }
     .expanded-card{
         top: 2rem;
-        height: 70vh; // TODO: This is unnecesary
+        height: 60vh;
         left: 6rem;
     }
 }
+
 
 @media screen and (max-width: 768px){
     .cards{
@@ -135,7 +136,7 @@
     .expanded-card{
         top: 8rem;
         height: 50%;
-        left: 15px; // TODO_ This doesn't look right on all devices
+        left: 5%;
         width: 80%;
     }
 }
