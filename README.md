@@ -6,6 +6,7 @@ I copied the original dashboard to branch "dashboard_0.1", where you can see the
 
 The list of changes:
 
+```
 Added Dark Theme and Dark Theme selector
 
 Fixed top margin of titles
@@ -13,7 +14,7 @@ Fixed top margin of titles
 Centered the Updates section on mobile
 
 Fixed margins of items for mobile
-
+```
 
 To run:
 
