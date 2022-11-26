@@ -31,7 +31,7 @@
   .toggle {
     display: flex;
     position: fixed;
-    right: 1rem;
+    right: 1.5rem;
     top: 2rem;
     z-index: 9;
     background: var(--sidebar-back);
